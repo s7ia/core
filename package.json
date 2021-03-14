@@ -1,0 +1,32 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "description": "Core Web Development Framework JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s7ia/core.git"
+  },
+  "keywords": [
+    "web",
+    "framework",
+    "nodejs",
+    "mern",
+    "cwdf",
+    "core"
+  ],
+  "author": "Ryan Marin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/s7ia/core/issues"
+  },
+  "homepage": "https://github.com/s7ia/core#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.0"
+  }
+}
