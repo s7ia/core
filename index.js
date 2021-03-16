@@ -32,7 +32,7 @@ mongoose.connect(process.env.MDATABASE, { useNewUrlParser: true, useUnifiedTopol
 // bootstrap api
 
 
-app.use ("/user", require("./routes/userApi"));
+app.use ("/api/user", require("./api/userApi"));
 
 console.log ("|=============================================================|")
 console.log ("| Core: API initialized.                                       ")
