@@ -2,6 +2,15 @@ const router = require("express").Router();
 const User = require("../models/userModel");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
+const authed = require("../middleware/auth");
+
+router.get("/home", authed, async function (req, res) {
+	try {
+		return res.status(200).send();
+	} catch (error) {
+		res.status(500).send();
+	}
+})
 
 router.get("/logout", async function (req, res) {
 	res.cookie("token", "", {

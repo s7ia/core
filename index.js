@@ -8,7 +8,10 @@ const app = express();
 
 const port = process.env.HTTP_PORT || 8080;
 
+const cookieParser = require("cookie-parser");
+
 app.use(express.json());
+app.use(cookieParser());
 
 app.listen(port, function () {
 	console.log ("|=============================================================|")
